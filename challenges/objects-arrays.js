@@ -97,7 +97,7 @@ console.log(contactInfo);
 const unisWithUni = [];
 for(i = 0; i < universities.length; i++) {
   if (universities[i].includes("Uni")) {
-    unisWithUni.push({id: i, university: universities[i].university});
+    unisWithUni.push({id: i, university: graduates[i].university});
   }
 }
 console.log(unisWithUni);
@@ -138,7 +138,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
-zooAnimals.map(function(i) {
+zooAnimals.map((i) => {
   lowCaseAnimalNames.push(i.animal_name.toLowerCase());
 });
 console.log(lowCaseAnimalNames);
