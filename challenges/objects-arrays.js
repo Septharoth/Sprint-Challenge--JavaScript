@@ -126,7 +126,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-zooAnimals.forEach(function(item) {
+zooAnimals.forEach((item) =>  {
   displayNames.push(item.animal_name + ", " + item.scientific_name)
 });
 console.log(displayNames);
@@ -149,7 +149,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 let lowPopulationAnimals = [];
-lowPopulationAnimals = zooAnimals.filter(function(i) {
+lowPopulationAnimals = zooAnimals.filter((i) => {
   if (i.population < 5) {
     lowPopulationAnimals.push(i)
   }
@@ -162,7 +162,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 let populationTotal = 0;
-populationTotal = zooAnimals.reduce(function(accumulator, pop) {
+populationTotal = zooAnimals.reduce((accumulator, pop) => {
   return accumulator + pop.population;
 }, 0);
 console.log(populationTotal);
