@@ -42,10 +42,10 @@ A closure is the combination of a function enclsoed with references to it's surr
 
 4. Describe the four rules of the 'this' keyword.
 
-  1. Principle 1: Window/Global Object Binding, when in the global scope "this" will be the window/console.
-  2. Principle 2: Implicit Binding, when you call a function with a dot, the object before the dot is "this"
-  3. Principle 3: New binding, Using a constructor function "this" refers to the object created and returned by the constructor function
-  4. Principle 4: Explicit binding, when we use call() or apply() methods, "this" is excplicity defined.
+  Principle 1: Window/Global Object Binding, when in the global scope "this" will be the window/console.
+  Principle 2: Implicit Binding, when you call a function with a dot, the object before the dot is "this"
+  Principle 3: New binding, Using a constructor function "this" refers to the object created and returned by the constructor function
+  Principle 4: Explicit binding, when we use call() or apply() methods, "this" is excplicity defined.
 
 5. Why do we need super() in an extended class?
 
